@@ -17,10 +17,9 @@
                        :parent_id => tr_id)) %>');">&nbsp;</span>
 <% end %>
 <% if entry.is_submodule? %>
-<%= 
 <%=  link_to ent_name,
-          {:id => @project, :repository_id => @ent_name },
-          :class => "icon icon-file #{Redmine::MimeType.css_class_of(ent_name)}")
+          {:id => @project, :repository_id => ent_name },
+          :class => "icon icon-shared"
 %>
 <% else %>
 <%=  link_to ent_name,
