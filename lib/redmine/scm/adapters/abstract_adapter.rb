@@ -331,6 +331,10 @@ module Redmine
           'file' == self.kind
         end
 
+        def is_submodule?
+          'submodule' == self.kind
+        end
+
         def is_dir?
           'dir' == self.kind
         end
