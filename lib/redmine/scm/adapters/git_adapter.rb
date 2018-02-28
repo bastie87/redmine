@@ -152,6 +152,7 @@ module Redmine
 			kind = 'dir'
 		elsif type == "commit"
 			kind = 'submodule'
+			full_path = sha
 		else
 			kind = 'file'
 		end
