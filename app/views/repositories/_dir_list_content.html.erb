@@ -18,7 +18,7 @@
 <% end %>
 <% if entry.is_submodule? %>
 <%=  link_to ent_name,
-          {:id => @project, :repository_id => ent_name },
+          {:id => @project, :repository_id => ent_name, :rev => ent_path },
           :class => "icon icon-shared"
 %>
 <% else %>
